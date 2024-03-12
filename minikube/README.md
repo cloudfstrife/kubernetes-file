@@ -47,7 +47,8 @@ minikube start --driver=kvm2 \
 --image-mirror-country=cn \
 --delete-on-failure=true \
 --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers \
---nodes=4 \
+--nodes=3 \
+--addons=[dashboard,storage-provisioner-gluster,metrics-server] \
 -v=8
 ```
 
