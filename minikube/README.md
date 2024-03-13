@@ -49,6 +49,7 @@ minikube start --driver=kvm2 \
 --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers \
 --nodes=3 \
 --addons=[dashboard,storage-provisioner-gluster,metrics-server] \
+--feature-gates=RemoveSelfLink=false \
 -v=8
 ```
 
