@@ -49,7 +49,7 @@ minikube start --driver=kvm2 \
 --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers \
 --nodes=3 \
 --cni=flannel \
---addons=[dashboard,metrics-server,csi-hostpath-driver] \
+--addons=[csi-hostpath-driver,dashboard,default-storageclass,ingress,metrics-server,volumesnapshots] \
 -v=8
 ```
 
